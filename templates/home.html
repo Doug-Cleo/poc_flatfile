@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title%}Flat File Demo{% endblock %}
+
+{% block content %}
+<div id="content" class="container mx-auto mt-3">
+    <div class="card w-50">
+        <div class="card-header h5">
+            FlatFile Demo
+        </div>
+        <div class="card-body">
+            <div class="card-test">
+                This is just a small demo program to show
+                off some of the capabilities of the 
+                flat file system
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <button id="import" class="btn btn-primary">Import Data</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src={{url_for("static", filename="js/home.js")}}></script>
+{% endblock %}
