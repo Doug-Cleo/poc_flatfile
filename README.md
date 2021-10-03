@@ -8,6 +8,9 @@ The project runs completely client side and doesn't transmit any data to FlatFil
 PHI information. FlatFile provides secure services so PHI information shouldn't be a problem, but we may
 not need those services as they are primarily for users who are importing Excel files.
 
+The application uses a trial account number that's good for about 17 more days from (2021-10-03), so if you 
+want to give this a whirl, unfortunately you have to do so soon.
+
 ## Installing The Application
 
 This code was developed with Python version 3.9.4, which you can install with pyenv in a terminal window:
