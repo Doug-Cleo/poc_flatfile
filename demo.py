@@ -1,12 +1,14 @@
 import os
-from flask import Flask, render_template, request
+
 import jwt
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 
 EMBED_ID = "13f87078-7bee-4628-9576-b95729b5618b"
 PRIVATE_KEY = "XB9qfKRsf5xjWnid8oRenkma9QtZP4S76eWCyVKFjHY4eDsBW9j7suQ3ccU00eON"
+
 
 @app.get("/")
 def home():
@@ -40,5 +42,3 @@ def process_json():
         )
         app.logger.info(message)
     return "done"
-
-

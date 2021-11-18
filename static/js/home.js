@@ -71,6 +71,7 @@ const importer = new FlatfileImporter(
                 key: 'first_name', 
                 label: 'First Name',
                 description: 'The Employee First Name',
+                alternates: ['FName'],
                 validators: [
                     { validate: 'required' },
                 ],
@@ -79,6 +80,7 @@ const importer = new FlatfileImporter(
                 key: 'last_name', 
                 label: 'Last Name',
                 description: 'The Employee Last Name',
+                alternates: ['LName'],
                 validators: [
                     { validate: 'required' },
                 ],
